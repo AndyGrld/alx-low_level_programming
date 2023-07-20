@@ -4,18 +4,18 @@
  * @l - stores first letter (A);
  *
  * Return: 0 always
-*/
+ */
 int main(void)
 {
-	char l = 'a';
+	char l = 97;
 
-	while (l <= 'z')
+	while (l <= (95 + 27))
 	{
 		putchar(l);
 		l++;
 	}
-	l = 'A';
-	while (l <= 'Z')
+	l = 65;
+	while (l <= (65 + 25))
 	{
 		putchar(l);
 		l++;

@@ -4,7 +4,7 @@
  * @l - stores first number
  *
  * Return: 0 always (success)
-*/
+ */
 int main(void)
 {
 	int l = 0;

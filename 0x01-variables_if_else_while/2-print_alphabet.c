@@ -4,7 +4,7 @@
  * @l - stores first letter
  *
  * Return:0 always
-*/
+ */
 int main(void)
 {
 	char l = 'a';
