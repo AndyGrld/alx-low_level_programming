@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /**
  * reset_to_98 - pointer that updates value it points to
  * @n: pointer
