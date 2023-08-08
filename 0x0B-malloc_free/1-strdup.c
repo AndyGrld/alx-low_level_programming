@@ -8,7 +8,7 @@
  * Return: pointer to newly allocated memory
  */
 
-char *_strfup(char *str)
+char *_strdup(char *str)
 {
 	int size = 0;
 	char *copy_string;
