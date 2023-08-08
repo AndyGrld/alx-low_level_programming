@@ -17,12 +17,12 @@ char *str_concat(char *s1, char *s2)
 	int pointer_1 = 0;
 	int pointer_2 = 0;
 
-	while(s1[size_1])
+	while (s1[size_1])
 	{
 		size_1++;
 	}
 
-	while(s2[size_2])
+	while (s2[size_2])
 	{
 		size_2++;
 	}
@@ -33,17 +33,17 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	
-	while(pointer_1 < size_1)
+
+	while (pointer_1 < size_1)
 	{
 		concat_string[pointer_1] = s1[pointer_1];
 		pointer_1++;
 	}
-	while(pointer_2 < size_2)
+	while (pointer_2 < size_2)
 	{
 		concat_string[pointer_1] = s2[pointer_2];
 		pointer_2++;
-        pointer_1++;
+		pointer_1++;
 	}
 
 	concat_string[pointer_1++] = '\0';
