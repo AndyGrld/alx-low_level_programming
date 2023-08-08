@@ -35,11 +35,3 @@ char *_strfup(char *str)
 
 	return (copy_string);
 }
-
-int main(void)
-{
-	char *pointer = _strfup("hello");
-	printf("%s", pointer);
-	free(pointer);
-	return (0);
-}
