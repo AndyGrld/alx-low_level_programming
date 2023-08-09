@@ -12,20 +12,20 @@ char *argstostr(int ac, char **av)
 {
 	int total_length = 0;
 	int position = 0;
-	int i;
-	int j;
+	int i, j;
+	char *result;
 
 	if (ac == 0 || av == NULL)
-	{
 		return (NULL);
-	}
 
 	for (i = 0; i < ac; i++)
 	{
-		total_length += strlen(av[i]) + 1;
+		for (j = 0; av[i][j]; j++)
+			total_length++;
+		total_length++;
 	}
 
-	char *result = (char *)malloc(sizeof(char) * total_length);
+	result = (char *)malloc(sizeof(char) * total_length);
 
 	if (result == NULL)
 	{

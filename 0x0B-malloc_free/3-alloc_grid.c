@@ -14,14 +14,14 @@
 
 int **alloc_grid(int width, int height)
 {
-	int i;
-	int j;
+	int i, j;
+	int **matrix;
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
 
-	int **matrix = (int **)malloc(sizeof(int *) * height);
+	matrix = (int **)malloc(sizeof(int *) * height);
 
 	if (matrix == NULL)
 	{

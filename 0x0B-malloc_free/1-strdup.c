@@ -14,6 +14,11 @@ char *_strdup(char *str)
 	char *copy_string;
 	int i = 0;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	while (str[size])
 	{
 		size++;
