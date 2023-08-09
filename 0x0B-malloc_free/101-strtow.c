@@ -15,7 +15,7 @@ int count_words(char *s1)
 	{
 		if (s1[i] == ' ')
 		{
-			if (s[i + 1] != ' ' && s1[i + 1] != '\0')
+			if (s1[i + 1] != ' ' && s1[i + 1] != '\0')
 				count++;
 		}
 		else if (i == 0)
