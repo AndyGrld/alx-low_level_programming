@@ -12,12 +12,13 @@ char **strtow(char *str)
 {
 	int word_count = 0;
 	int word_index = 0;
+    int i = 0;
 	char **words;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
 
-	for (int i = 0; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 			word_count++;
 
@@ -25,7 +26,7 @@ char **strtow(char *str)
 	if (words == NULL)
 		return (NULL);
 
-	for (int i = 0; str[i] != '\0';)
+	for (i = 0; str[i] != '\0';)
 	{
 		if (str[i] != ' ')
 		{
