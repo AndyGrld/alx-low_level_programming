@@ -8,20 +8,27 @@
  *
  * Return: pointer to array
  */
-
-void *_calloc(unsigned int nmeb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *array;
-	unsigned int i;
-	unsigned int total_size;
+	if (nmemb == 0 || size == 0)
+	{
+		return NULL;
+	}
 
-	if (size == 0 || nmemb == 0)
-		return (NULL);
-	total_size = nmemb * size;
-	array = malloc(total_size);
-	if (array == NULL)
-		return (NULL);
-	for (i = 0; i < total_size; i++)
-		array[i] = 0;
-	return (array);
+	unsigned int total_size = nmemb * size;
+	void *ptr = malloc(total_size);
+
+	if (ptr == NULL)
+	{
+		return NULL;
+	}
+
+	// Initialize allocated memory to zero
+	char *byte_ptr = (char *)ptr;
+	for (unsigned int i = 0; i < total_size; i++)
+	{
+		byte_ptr[i] = 0;
+	}
+
+	return ptr;
 }
