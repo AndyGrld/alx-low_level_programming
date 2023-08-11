@@ -23,12 +23,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		n = 0;
 	}
-
 	while (s1[len1])
 	{
 		len1++;
 	}
-
 	concat_string = malloc(len1 + n + 1);
 	if (concat_string == NULL)
 		return (NULL);

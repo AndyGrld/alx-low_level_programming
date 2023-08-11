@@ -3,7 +3,7 @@
 
 /**
  * _calloc - memory allocation for array
- * @nmeb - number of array member
+ * @nmeb: number of array member
  * @size: size of elements
  *
  * Return: pointer to array
@@ -23,5 +23,5 @@ void *_calloc(unsigned int nmeb, unsigned int size)
 		return (NULL);
 	for (i = 0; i < total_size; i++)
 		array[i] = 0;
-	return array;
+	return (array);
 }
