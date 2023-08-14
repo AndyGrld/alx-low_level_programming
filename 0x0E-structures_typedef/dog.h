@@ -3,7 +3,10 @@
 #include <stddef.h>
 
 /**
- * dog: create a dog structure with features name, age, owner
+ * struct dog - create a dog structure with features name, age, owner
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
  */
 struct dog
 {
