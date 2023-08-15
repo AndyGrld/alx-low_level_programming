@@ -4,6 +4,8 @@
 /**
  * print_dog - prints details of dog
  * @d: struct dog
+ *
+ * Return: void
  */
 void print_dog(struct dog *d)
 {
@@ -17,7 +19,7 @@ void print_dog(struct dog *d)
 		printf("Name: %s\n", d->name);
 	printf("Age: %.6f\n", d->age);
 	if (d->owner == NULL)
-		printf("Owner: %s\n", d->owner);
-	else
 		printf("Owner: (nil)\n");
+	else
+		printf("Owner: %s\n", d->owner);
 }
