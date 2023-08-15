@@ -3,11 +3,11 @@
 #include "dog.h"
 /**
  * print_dog - prints details of dog
- * @d - struct dog
+ * @d: struct dog
  */
 void print_dog(struct dog *d)
 {
-	if (d == NULL)
+	if (!d)
 	{
 		return;
 	}
