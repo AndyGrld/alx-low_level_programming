@@ -14,7 +14,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	if (size > 0 && array && cmp)
 	{
-		for (index = 0; i < size; index++)
+		for (index = 0; index < size; index++)
 		{
 			current = cmp(array[index]);
 			if (current)

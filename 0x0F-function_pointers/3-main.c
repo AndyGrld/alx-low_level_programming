@@ -8,7 +8,7 @@
  *
  * Return: 0
  */
-int main(int argc , char *argv[])
+int main(int argc, char *argv[])
 {
 	int x, y, z;
 	int (*f)(int, int);
@@ -26,7 +26,8 @@ int main(int argc , char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+
 	z = f(x, y);
-	printf("%d\n", c);
+	printf("%d\n", z);
 	return (0);
 }
