@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * append_text_to_file - That appends text at the end of a file.
  * @filename: THis is the name of the file
